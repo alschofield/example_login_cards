@@ -1,0 +1,160 @@
+@keyframes bigRedButton {
+/*  25% {
+    top: 150px;
+    right: 150px;
+    transform: scale(2);
+  }*/
+  50% {
+    right: 20px;
+    top: 150px;
+    transform: scale(1.25);
+  }
+/*  75%{
+    right: 200px;
+    top: 50px;
+  }*/
+  100% {
+    position: fixed
+    top: 60px;
+    right: 200px;
+    height: 75px;
+    width: 75px;
+    transform: rotate(45deg);
+    padding: 0;
+  }
+}
+
+@keyframes reverseBigRedButton {
+  0% {
+    top: 60px;
+    right: 200px;
+    height: 75px;
+    width: 75px;
+  }
+  50% {
+    right: 220px;
+    top: 100px;
+    height: 75px;
+    width: 75px;
+    transform: rotate(45deg);    
+  }
+  100% {
+    position: absolute;
+    top: 67.5px;
+    right: 112.5px;
+    height: 135px;
+    width: 135px;
+  }
+}
+
+@keyframes fillDiv {
+  0% {
+    position: fixed;
+    height: 10px;
+    width: 8px;
+    top: 25%;
+    left: 67.5%;
+    margin-top: -5px;
+    margin-left: -4px;
+    border-radius: 100%;
+    background-color: #EB2653;
+  }
+  100% {
+    position: fixed;
+    display: block;
+    background-color: #EB2653;
+    width: 450px;
+    height: 550px;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    margin-left: -225px;
+    margin-top: -275px;
+  }
+}
+
+@keyframes moveFirstCard {
+  to {
+    width: 425px;
+    margin-left: -212.5px;
+    margin-top: -282.5px;
+    opacity: .65;
+  }
+}
+
+@keyframes moveSecondCard {
+  to {
+    width: 400px;
+    margin-left: -200px;
+    margin-top: -288px;
+    opacity: .25;
+  }
+}
+
+@keyframes reverseFirstCard{
+  to {
+    width: 450px;
+    margin-left: -225px;
+    margin-top: -275px;
+    opacity: none;
+  }
+}
+
+@keyframes reverseSecondCard {
+  to {
+    width: 425px;
+    margin-left: -212.5px;
+    margin-top: -282.5px;
+    opacity: .65;
+  }
+}
+
+@keyframes moveLabelUsername {
+  to {
+    margin-top: -10px;
+    margin-left: 10%;
+    font-size: 19px;
+    opacity: .25;
+  }
+}
+
+@keyframes moveLabelPassword {
+  to {
+    margin-top: 22.5px;
+    margin-left: 10%;
+    font-size: 19px;
+    opacity: .25;
+  }
+}
+
+@keyframes moveLabelUsernameSignup {
+  to {
+    margin-top: 20px;
+    margin-left: 10%;
+    font-size: 19px;
+    opacity: .25;
+  }
+}
+
+@keyframes moveLabelPasswordSignup {
+  to {
+    margin-top: 20px;
+    margin-left: 10%;
+    font-size: 19px;
+    opacity: .25;
+  }
+}
+
+@keyframes rotateCheckmark {
+  0% {
+    height: 5px;
+    width: 5px;
+  }
+  100% {
+    color: white;
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    transform: rotate(0deg);
+  }
+}

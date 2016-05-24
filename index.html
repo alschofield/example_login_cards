@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <link href="https://file.myfontastic.com/wvFjEyZ7Y4rnihwXhgm7Qn/icons.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+  <link rel="stylesheet" type="text/css" href="./animation.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <script type="template/handlebars" id="login-template">
+    <div id="element">
+      <div id="top-div">
+        <h1 id="login-header">LOGIN</h1>
+      </div>
+      <button id="big-red-button">+</button>
+      <div id="middle-div">
+        <p id="username-label">Username</p>
+        <input id="username-login" type="text" name="username"></input>
+        <p id="password-label">Password</p>
+        <input id="password-login" type="password" name="password"></input>
+        <button id="go-button">GO</button>
+      </div>
+      <div id="bottom-div">
+        <p id="forgot-password">Forgot your password?</p>
+      </div>
+    </div>
+  </script>
+  <script type="template/handlebars" id="sign-up-template">
+    <h1 id="signup-header">REGISTER</h1>
+    <button id="close-button">+</button>
+    <p id="username-label-signup">Username</p>
+    <input id="username-signup" type="text" name="username"></input>
+    <p id="password-label-signup">Password</p>
+    <input id="password-signup" type="password" name="password"></input>
+    <p id="password-label-signup-repeat">Repeat Password</p>
+    <input id="password-signup-confirm" type="password" name="password-confirm"></input>
+    <button id="next-button">NEXT</button>
+  </script>
+  <div id="back-card"></div>
+</body>
+</html>

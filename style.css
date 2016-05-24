@@ -1,0 +1,386 @@
+body {
+  background-color: #88F9E5;
+  font-family: 'Muli', sans-serif;
+}
+
+#second-back-card {
+  position: fixed;
+  display: block;
+  background-color: white;
+  width: 400px;
+  height: 550px;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -290px;
+  opacity: .50;
+  z-index: 6;
+}
+
+#back-card {
+  position: fixed;
+  display: block;
+  background-color: white;
+  width: 425px;
+  height: 550px;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  margin-left: -212.5px;
+  margin-top: -282.5px;
+  opacity: .65;
+  z-index: 7;
+}
+
+#element {
+  position: fixed;
+  display: block;
+  background-color: white;
+  width: 450px;
+  height: 550px;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  margin-left: -225px;
+  margin-top: -275px;
+  z-index: 8;
+}
+
+#register-element {
+  position: fixed;
+  display: block;
+  background-color: #EB2653;
+  width: 450px;
+  height: 550px;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  margin-left: -225px;
+  margin-top: -275px;
+  animation: fillDiv .25s forwards;
+  z-index: 9;
+}
+
+#big-red-button {
+  position: absolute;
+  display: block;
+  height: 135px;
+  width: 135px;
+  top: 40px;
+  right: -67.5px;
+  border-radius: 100%;
+  border: none;
+  background-color: #EB2653;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 10px;
+  z-index: 10;
+}
+
+#close-button {
+  position: absolute;
+  display: block;
+  height: 50px;
+  width: 50px;
+  top: 40px;
+  right: 25px;
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 60px;
+  color: white;
+  transform: rotate(45deg);
+}
+
+#close-button:focus {
+  outline: none;
+}
+.activate {
+  /* animation here */
+  animation: bigRedButton 1s forwards;
+}
+
+.reverse {
+  animation: reverseBigRedButton 1s forwards;
+}
+
+#big-red-button:focus {
+  outline:0;
+}
+
+#forgot-password {
+  position: absolute;
+  display: block;
+  bottom: 20px;
+  opacity: .2;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+
+h1#login-header {
+  width: 100%;
+  border-left: 4.5px solid #EB2653;
+  margin: 0;
+  margin-top: 60px;
+  padding-left: 45px;
+  color: #EB2653;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+h1#signup-header {
+  width: 100%;
+  border-left: 4.5px solid white;
+  margin: 0;
+  margin-top: 60px;
+  padding-left: 45px;
+  color: white;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+#top-div {
+  height: 75px;
+  width: 100%;
+}
+
+#middle-div {
+  height: 340px;
+  width: 100%;
+}
+
+#bottom-div {
+  height: 75px;
+  width: 100%;
+}
+
+#go-button {
+  display: block;
+  height: 70px;
+  width: 235px;
+  margin: 0 auto;
+  margin-top: 55px;
+  background-color: white;
+  border: 3px solid #D7D7D7; 
+  color: #D7D7D7;
+  font-size: 24px;
+  pointer-events: none;
+}
+
+.checkmark {
+  display: block;
+  margin: 0 auto;
+  height: 50px !important;
+  width: 50px !important;
+  transform: rotate(-210deg);
+  z-index: 3;
+}
+
+.rotate-checkmark {
+  animation: rotateCheckmark .5s forwards;
+}
+
+.activate-go {
+  outline: none !important;
+  color: #EB2653  !important;
+  border-color: #EB2653 !important;
+  pointer-events: all !important;
+}
+
+#go-button:focus {
+  outline: none;
+}
+
+#go-button:active {
+  background-color: #EB2653;
+  border: none;
+  outline: none;
+  /* animation on this */
+}
+
+#next-button {
+  display: block;
+  height: 70px;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #EB2653;
+  background-color: white;
+  border: none;
+  font-size: 24px;
+}
+
+#next-button:focus {
+  outline: none;
+}
+
+#username-login {
+  display: block;
+  height: 70px;
+  width: 350px; 
+  margin: 0 auto;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2.5px solid #D7D7D7;
+  font-size: 22px;
+  font-weight: lighter;
+  padding: 0px;
+  z-index: 0;
+}
+
+#password-login {
+  display: block;
+  height: 70px;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: none;
+  border-bottom: 2.5px solid #D7D7D7;
+  font-size: 22px;
+  font-weight: lighter;
+  padding: 0px;
+  z-index: 0;
+}
+
+#username-signup {
+  display: block;
+  height: 60px;
+  width: 350px; 
+  margin: 0 auto;
+  margin-top: 30px;
+  border: none;
+  border-bottom: 2.5px solid #D7D7D7;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: transparent;
+  color: white;
+}
+
+#password-signup {
+  display: block;
+  height: 60px;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: none;
+  border-bottom: 2.5px solid #D7D7D7;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: transparent;
+  color: white;
+}
+
+#password-signup-confirm {
+  display: block;
+  height: 60px;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: none;
+  border-bottom: 2.5px solid #D7D7D7;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: transparent;
+  color: white;
+}
+
+input:focus {
+  outline: none; 
+}
+
+#password-login:focus {
+  border-color: #EB2653;
+  /* animation here */
+}
+
+#username-login:focus {
+  border-color: #EB2653;
+  /* animation here */
+}
+
+.move-label-username {
+  animation: moveLabelUsername .5s forwards;
+}
+
+.move-label-password {
+  animation: moveLabelPassword .5s forwards;
+}
+
+.move-label-username-signup {
+  animation: moveLabelUsernameSignup .5s forwards;
+}
+
+.move-label-password-signup {
+  animation: moveLabelPasswordSignup .5s forwards;
+}
+
+#username-label {
+  position: absolute;
+  margin-left: 11%;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: lighter;
+  opacity: .5;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#password-label {
+  position: absolute;
+  margin-left: 11%;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: lighter;
+  opacity: .5;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#username-label-signup {
+  position: absolute;
+  margin-left: 11%;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: lighter;
+  color: white;
+  pointer-events: none;
+}
+
+#password-label-signup {
+  position: absolute;
+  margin-left: 11%;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: lighter;
+  color: white;
+  pointer-events: none;
+}
+
+#password-label-signup-repeat {
+  position: absolute;
+  margin-left: 11%;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: lighter;
+  color: white;
+  pointer-events: none;
+}
+
+.move-first-card {
+  animation: moveFirstCard 1s forwards;
+}
+
+.move-second-card {
+  animation: moveSecondCard 1s forwards;
+}
+
+.first-card-reverse {
+  animation: reverseFirstCard 1s forwards;
+}
+
+.second-card-reverse {
+  animation: reverseSecondCard 1s forwards;
+}
